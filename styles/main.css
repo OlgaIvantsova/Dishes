@@ -84,18 +84,18 @@ form input::-webkit-input-placeholder {
 }
 .basket {
 	float: right;
-	width: 17%;
+	width: 20%;
 }
 .basket a {
 	display: inline-block;
-	float: left;
-	margin-right: 5px;
 }
 .basket-article {
 	display: inline-block;
+	padding-left: 5px;
 	line-height: 32px;
 }
 .basket-icon {
+	float: left;
 	display: block;
 	width: 32px;
 	height: 32px;
@@ -161,7 +161,7 @@ main {
 	padding-left: 44px;
 	color: #4b4b4b;
 }
-.sidebar a:hover {
+.sidebar a:hover, a.active {
 	padding: 17px 0 17px 44px;
 	text-transform: uppercase;
 	background: #11157c;
@@ -184,7 +184,7 @@ main {
 	float: left;
 	width: 29%;
 	text-align: center;
-	margin-right: 50px;
+	margin-right: 6%;
 }
 .products-item:last-child {margin: 0;}
 .products-foto {
@@ -292,4 +292,84 @@ h1 {
 	font-size: 19px;
 	color: #6a6a6a;
 	line-height: 40px;
+}
+
+/*footer*/
+footer {
+	padding: 35px 85px;
+	background: #e3e3e3;
+	color: #1c1c1c;
+	font-size: 14px;
+}
+.footer-left-block {width: 30%;}
+.address {padding-left: 106px;}
+.address p {
+	line-height: 36px;
+}
+.footer-right-block {width: 48%;}
+h2 {
+	padding: 18px 0;
+	font-size: 19px;
+	color: #101c7e;
+}
+.useful-links {width: 40%;}
+.useful-links a {
+	display: block;
+	background: url(../images/footer-arrow.png) no-repeat 0 50%;
+	padding-left: 6px;
+	color: #1c1c1c;
+	font-size: 14px;
+	line-height: 36px;
+}
+.useful-links a:hover {color: #6a6a6a;}
+.contact {
+	width: 44%;
+	min-width: 150px;
+	padding-top: 20px;
+	font-size: 18px;
+	text-align: center;
+	line-height: 36px;
+}
+.contact img {margin-bottom: 17px;}
+.phone {margin-bottom: 48px;}
+button {
+	width: 100%;
+	height: 45px;
+	text-transform: uppercase;
+}
+button a {
+	display: inline-block;
+	font-family: Sitka;
+	padding: 8px 15px;
+	color: #fff;
+	background: #11157c;
+}
+button a:hover, button a:active {color: grey;}
+
+@media only screen and (max-width: 1080px) {
+	.header-menu a {padding: 5px;}
+}
+@media only screen and (max-width: 980px) {
+	.header-menu {
+		font-size: 14px;
+		padding: 0 2%;
+	}
+	.breadcrumps {margin-left: 15px;}
+	.sidebar a:hover, a.active {padding: 5px 0 5px 15px;}
+	.sidebar a {padding-left: 15px}
+	.products-foto {padding: 0;}
+	h1 {font-size: 16px;}
+	.products-descr p, .number, .buy-btn {font-size: 14px;}
+	.buy {height: 40px;}
+	.number input::-webkit-input-placeholder {
+		padding-left: 5px;
+	}
+	footer {padding: 10px;}
+	.contact {font-size: 14px;}
+	button a {padding: 3px;}
+}
+@media only screen and (max-width: 640px) {
+	.arrow {
+		display: none;
+	}
 }
