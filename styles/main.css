@@ -207,13 +207,13 @@ h1 {
 	width: 100%;
 }
 .products-descr p {
-	float: left;
+	/*float: left;*/
 	width: 73%;
 	font-size: 19px;
 	color: #6a6a6a;
 	text-align: left;
 }
-.products-descr a {float: right;}
+/*.products-descr i {float: right;}*/
 .products-info {
 	position: absolute;
 	bottom: 0;
@@ -301,12 +301,18 @@ footer {
 	color: #1c1c1c;
 	font-size: 14px;
 }
-.footer-left-block {width: 30%;}
+.footer-left-block {
+	float: left;
+	width: 30%;
+}
 .address {padding-left: 106px;}
 .address p {
 	line-height: 36px;
 }
-.footer-right-block {width: 48%;}
+.footer-right-block {
+	float: right;
+	width: 48%;
+}
 h2 {
 	padding: 18px 0;
 	font-size: 19px;
@@ -369,7 +375,53 @@ button a:hover, button a:active {color: grey;}
 	button a {padding: 3px;}
 }
 @media only screen and (max-width: 640px) {
-	.arrow {
-		display: none;
+	.header-menu li {
+		float: none;
+ 	    position: relative;
+   	    width: 30%;
+	}
+	.header-submenu {
+    	position: absolute;
+   	 	top: 0;
+    	left: 100%;
+    	width: 100%;
+   	}
+   	.header-submenu li {width: 100%;}
+	.top-block-item {width: 70%;}
+	form {width: 45%;}
+	.basket {width: 45%;}
+	.arrow {display: none;}
+	.sidebar {
+		width: 25%;
+		font-size: 12px;
+	}
+	.sidebar a {padding-left: 5px;}
+	.sidebar a:hover, a.active {padding: 5px 0 5px 5px;}
+	.products-item {
+        width: 32%;
+   		margin-right: 1%;
+	}
+	.number, .buy-btn, .price {font-size: 10px;}
+	.euro {font-size: 14px;}
+	.footer-left-block, .footer-right-block {
+		float: none;
+		width: 100%;
+		text-align: center;
+	}
+}
+@media only screen and (max-width: 480px) {
+	.container {padding: 0;}
+	.header-top-block {padding: 10px 2%;}
+	.logo-wrap {width: 25%;}
+	.products-item {
+    	width: 100%;
+    	margin-right: 0; 
+	}
+	.address {
+     	padding-left: 0; 
+}
+	.useful-links, .contact {
+		float: none;
+		width: 100%;
 	}
 }
