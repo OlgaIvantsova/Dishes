@@ -142,7 +142,7 @@ form input::-webkit-input-placeholder {
 	width: 100%;
 	overflow: hidden;
 }
-.banner > img {
+.gallery > img {
 	width: 100%;
 	height: auto;
 }
@@ -164,7 +164,6 @@ form input::-webkit-input-placeholder {
 .writing {
 	position: absolute;
 	width: 53%;
-	height: 34%;
 	top: 9%;
 	left: 5.5%;
 	padding-top: 15px;
@@ -182,8 +181,8 @@ form input::-webkit-input-placeholder {
 	font-size: 37px;
 	padding: 19px 0;
 }
+.writing p {margin-bottom: 15px;}
 .icons {text-align: center;}
-
 h2 {
 	font-size: 30px;
 	padding: 20px 0;
@@ -394,6 +393,7 @@ hr {
 	width: 71%;
 	height: 44px;
 	border: 1px solid #6a6a6a;
+	padding-left: 20px;
 }
 .abonement button {
 	width: 27%;
@@ -403,11 +403,6 @@ hr {
     border-left: 0;
 }
 .abonement a {width: 100%;}
-.abonement-field::-webkit-input-placeholder {
-	text-align: left;
-	padding-left: 20px;
-}
-
 
 /*footer*/
 footer {
@@ -428,7 +423,7 @@ footer {
 	float: right;
 	width: 48%;
 }
-.footer h2 {
+footer h2 {
 	padding: 18px 0;
 	font-size: 19px;
 	color: #101c7e;
@@ -469,37 +464,39 @@ button a:hover, button a:active {color: grey;}
 
 @media only screen and (max-width: 1080px) {
 	.header-menu a {padding: 5px;}
-	.products-foto {
-		height: 244px;
-	}
 }
 @media only screen and (max-width: 980px) {
 	.header-menu {
 		font-size: 14px;
 		padding: 0 2%;
 	}
-	.breadcrumps {margin-left: 15px;}
-	.sidebar a:hover, a.active {padding: 5px 0 5px 15px;}
-	.sidebar a {padding-left: 15px;}
+	.writing h1 {
+		padding: 0;
+		font-size: 22px;
+	}
+	.writing {
+		width: 70%;
+		height: auto;
+	}
+	.filter-block {width: 70%;}
 	.products-foto {
-		height: 159px;
 		padding: 0;
 	}
-	h1 {font-size: 16px;}
+	.products-item h1 {font-size: 16px;}
 	.products-descr p, .number, .buy-btn {font-size: 14px;}
 	.number, .buy {
 		float: none;
 		width: 100%;
 	}
 	.number input {height: 50px;}
-	.number input::-webkit-input-placeholder {
-		padding-left: 5px;
-	}
+	.number input::-webkit-input-placeholder {padding-left: 5px;}
 	.select {
   		width: 50px;
     	height: 50px;
 	}
 	.buy {margin-top: 5px;}
+	.profile, .abonement, .facebook, .instagram {width: 50%;}
+	.profile {padding-left: 5px;}
 	footer {padding: 10px;}
 	.contact {font-size: 14px;}
 	button a {padding: 3px;}
@@ -534,21 +531,28 @@ button a:hover, button a:active {color: grey;}
    		z-index: 10;
 	}
    	.header-submenu li {width: 100%;}
-	.sidebar a {padding: 10px 0;}
-	.content {
-		float: none;
-		width: 100%;
+	.writing img {
+   		width: 50%;
+   		height: auto;
 	}
-	.sidebar a:hover, a.active {padding: 10px 0;}
+	.writing h1 {font-size: 18px;}
+	.icons-item {
+    	float: none; 
+   		width: 100%;
+   	}
+   	.filter-block {width: 90%;}
 	.products-item {
+		float: none;
         width: 100%;
         text-align: center;
-    	margin-right: 0; 
+    	margin: 0; 
     	padding-bottom: 25px;
 	}
-	.products-foto {
-		height: auto;
-	}
+	.profile, .abonement, .facebook, .instagram {
+   		width: 100%;
+   		text-align: center;
+   	}
+	.abonement {margin-bottom: 20px;}
 	.euro {font-size: 14px;}
 	.number input::-webkit-input-placeholder {
 		text-align: center;
