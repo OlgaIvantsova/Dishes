@@ -32,8 +32,6 @@ body {
 .container {
 	margin: 0 auto;
 	max-width: 1190px;
-	padding-left: 5px;
-	padding-right: 5px;
 }
 header {
 	border-top: 3px solid #11157c;
@@ -186,12 +184,14 @@ main {
 	text-align: center;
 	margin-right: 6%;
 }
-.products-item:last-child {margin: 0;}
+.products-item:nth-of-type(3n) {margin: 0;}
 .products-foto {
 	width: 100%;
 	padding: 40px 0 20px 0;
 	text-align: center; 
 	border: 1px solid #6a6a6a;
+	height: 263px;
+	overflow: hidden;
 }
 .products-foto img {
 	width: 100%;
@@ -207,13 +207,11 @@ h1 {
 	width: 100%;
 }
 .products-descr p {
-	/*float: left;*/
 	width: 73%;
 	font-size: 19px;
 	color: #6a6a6a;
 	text-align: left;
 }
-/*.products-descr i {float: right;}*/
 .products-info {
 	position: absolute;
 	bottom: 0;
@@ -354,6 +352,9 @@ button a:hover, button a:active {color: grey;}
 
 @media only screen and (max-width: 1080px) {
 	.header-menu a {padding: 5px;}
+	.products-foto {
+		height: 244px;
+	}
 }
 @media only screen and (max-width: 980px) {
 	.header-menu {
@@ -362,48 +363,81 @@ button a:hover, button a:active {color: grey;}
 	}
 	.breadcrumps {margin-left: 15px;}
 	.sidebar a:hover, a.active {padding: 5px 0 5px 15px;}
-	.sidebar a {padding-left: 15px}
-	.products-foto {padding: 0;}
+	.sidebar a {padding-left: 15px;}
+	.products-foto {
+		height: 159px;
+		padding: 0;
+	}
 	h1 {font-size: 16px;}
 	.products-descr p, .number, .buy-btn {font-size: 14px;}
-	.buy {height: 40px;}
+	.number, .buy {
+		float: none;
+		width: 100%;
+	}
+	.number input {height: 50px;}
 	.number input::-webkit-input-placeholder {
 		padding-left: 5px;
 	}
+	.select {
+  		width: 50px;
+    	height: 50px;
+	}
+	.buy {margin-top: 5px;}
 	footer {padding: 10px;}
 	.contact {font-size: 14px;}
 	button a {padding: 3px;}
 }
 @media only screen and (max-width: 640px) {
+	.header-top-block {
+   		text-align: center;
+   		padding: 10px 2%;
+	}
+	.logo-wrap, .top-block-item {
+		float: none;
+		width: 100%;
+	}
+	form, .basket {width: 50%;}
+	.logo-wrap a {display: inline-block;}
+	.header-menu {
+		padding: 0;
+		text-align: center;
+	}
 	.header-menu li {
 		float: none;
  	    position: relative;
-   	    width: 30%;
+   	    width: 100%;
+   	    padding: 10px 0;
 	}
 	.header-submenu {
-    	position: absolute;
-   	 	top: 0;
-    	left: 100%;
-    	width: 100%;
-   	}
+   		position: absolute;
+    	top: 99%;
+    	right: 0;
+   		left: 0;
+   		width: 100%;
+   		z-index: 10;
+	}
    	.header-submenu li {width: 100%;}
-	.top-block-item {width: 70%;}
-	form {width: 45%;}
-	.basket {width: 45%;}
-	.arrow {display: none;}
-	.sidebar {
-		width: 25%;
-		font-size: 12px;
+	.sidebar a {padding: 10px 0;}
+	.content {
+		float: none;
+		width: 100%;
 	}
-	.sidebar a {padding-left: 5px;}
-	.sidebar a:hover, a.active {padding: 5px 0 5px 5px;}
+	.sidebar a:hover, a.active {padding: 10px 0;}
 	.products-item {
-        width: 32%;
-   		margin-right: 1%;
+        width: 100%;
+        text-align: center;
+    	margin-right: 0; 
+    	padding-bottom: 25px;
 	}
-	.number, .buy-btn, .price {font-size: 10px;}
+	.products-foto {
+		height: auto;
+	}
 	.euro {font-size: 14px;}
-	.footer-left-block, .footer-right-block {
+	.number input::-webkit-input-placeholder {
+		text-align: center;
+		padding-left: 0;
+	}
+	.footer-left-block, .footer-right-block, .sidebar {
 		float: none;
 		width: 100%;
 		text-align: center;
@@ -411,12 +445,6 @@ button a:hover, button a:active {color: grey;}
 }
 @media only screen and (max-width: 480px) {
 	.container {padding: 0;}
-	.header-top-block {padding: 10px 2%;}
-	.logo-wrap {width: 25%;}
-	.products-item {
-    	width: 100%;
-    	margin-right: 0; 
-	}
 	.address {
      	padding-left: 0; 
 }
