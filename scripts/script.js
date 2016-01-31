@@ -17,9 +17,11 @@ function scrollLeftGallery(selector) {
       selector.find("img:first-child").fadeIn();
     } else{
       selector.find("img:first-child").animate({"opacity":"0"}, 300, function(){
-      	var lastChild = selector.find("img:last-child");
-      	selector.find("img:first-child").remove().css("opacity","1").appendTo(selector);
-        lastChild.remove().css("opacity","1").prependTo(selector);
+        var firstChild = selector.find("img:first-child");
+      	var prevChild = firstChild.prev();
+        prevChild.remove().css("opacity","1").prependTo(selector);
+      	firstChild.remove().css("opacity","1").appendTo(selector);
+        
     });
     }
 }
