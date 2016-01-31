@@ -34,4 +34,15 @@ $(document).ready(function () {
    		event.preventDefault();
    		scrollLeftGallery('.gallery');
    	});
+   $("#menu-icon").on("click", function(event) {
+      var menu = $(".header-menu");
+      event.preventDefault();
+       menu.slideToggle();
+       $(window).resize(function() {
+       var wid = $(window).width();
+       if (wid>760&&menu.is(":hidden")) {
+       menu.removeAttr("style");
+      };
+    });
+  });
 });
