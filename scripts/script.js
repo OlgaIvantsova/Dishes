@@ -26,6 +26,8 @@ function scrollLeftGallery(selector) {
     }
 }
 
+
+
 $(document).ready(function () {
    $('#scroll-right').click(function(event) {
    		event.preventDefault();
@@ -36,7 +38,8 @@ $(document).ready(function () {
    		event.preventDefault();
    		scrollLeftGallery('.gallery');
    	});
-   $("#menu-icon").on("click", function(event) {
+
+   $("#menu-icon").click(function(event) {
       var menu = $(".header-menu");
       event.preventDefault();
        menu.slideToggle();
@@ -47,4 +50,18 @@ $(document).ready(function () {
       };
     });
   });
+
+   $('.choice-item').click(function(event){ 
+      event.preventDefault();
+      var radioBtn = $(this).find(":radio");
+      var attr = radioBtn.attr("checked");
+      if(attr == "checked") {
+        radioBtn.removeAttr("checked");
+        $(this).find(".radiobtn-active").addClass("radiobtn-ic").removeClass("radiobtn-active");
+      } else {
+        radioBtn.attr("checked","checked");
+        $(this).find(".radiobtn-ic").addClass("radiobtn-active").removeClass("radiobtn-ic");
+      };
+    });
+
 });
