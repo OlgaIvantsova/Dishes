@@ -64,4 +64,9 @@ $(document).ready(function () {
       };
     });
 
+   // $('#datepicker').datepicker('option', $.datepicker.regional["eng"]));
+  $(function(){
+            $("#datepicker").datepicker();
+       });
+
 });

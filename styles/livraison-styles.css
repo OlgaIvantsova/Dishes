@@ -211,7 +211,6 @@ h3 {
 .choice {
 	width: 54%;
 	margin: 0 auto;
-	margin-bottom: 30px;
 	cursor: pointer;
 }
 .choice-item td {
@@ -235,6 +234,38 @@ td.choice-amount {
 	color: #11157c;
 	width: 14%;
 	text-align: center;
+}
+.calendar {
+	width: 53%;
+	padding: 30px 0 47px 0;
+	border: 1px solid #e4e4e4;
+	border-width: 1px 0;
+	margin: 0 auto;
+}
+.calendar-wrap {
+	width: 68%;
+	margin: 0 auto;
+}
+.calendar-block {
+	float: right;
+	width: 40%;
+	font-size: 14px;
+	color: #555555;
+}
+.calendar-block:first-child {float: left;}
+.calendar label {
+	display: inline-block;
+	padding-top: 12px;
+}
+.calendar input {
+	width: 170px;
+	height: 45px;
+	padding: 0 10px;
+	margin-top: 6px;
+	border: 1px solid #6a6a6a;
+	font-size: 18px;
+	color: #6a6a6a;
+	background: url(../images/date-ic.png) no-repeat 95% center;
 }
 .manage-order {
 	width: 53%;
@@ -335,7 +366,7 @@ button a:hover, button a:active {color: grey;}
 	}
 	.tabs-item:nth-of-type(3), .tabs-item:last-child {width: 25%;}
 	.application, .application:last-child {
-    	width: 95%;
+    	width: 100%;
     	 float: none; 
    		 margin: 0 auto;
    	}
@@ -384,13 +415,11 @@ button a:hover, button a:active {color: grey;}
 		height: auto;
 	}
 	.tabs-item:nth-of-type(3), .tabs-item:last-child {width: 100%;}
-	.application-right-column, .application-left-column {width: 49%;}
-	.sum {width: 95%;}
-	.sum-title {
-        width: 75%;
-    	margin-left: 0;
-    }
-    .amount {width: 25%;}
+	.choice {width: 95%;}
+	td.choice-amount {width: auto;}
+	.choice-item td:nth-of-type(odd) {padding-right: 0;}
+	.choice-item td:first-child {padding-right: 20px;}
+	.choice-item td:nth-of-type(2) {padding: 5px;}
     .manage-order {width: 90%;}
 	.footer-left-block, .footer-right-block, .sidebar {
 		float: none;
