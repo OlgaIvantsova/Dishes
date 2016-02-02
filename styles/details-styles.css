@@ -206,13 +206,13 @@ tbody {
 	color: #565656;
 	text-align: center;
 }
-table img {padding: 10px 0;}
+table img, .items {padding: 10px 0;}
 td {
 	border-bottom: 1px solid #e4e4e4;
 	height: 71px;
 	font-size: 18px;
 	vertical-align: top;
-	padding: 10px 15px;
+	padding: 13px 15px;
 }
 td:first-child {padding: 0 5px;}
 td:last-child {color: #11157c;}
@@ -224,6 +224,29 @@ td:nth-of-type(2) {
 .products-first-row td {
 	height: 42px;
 	font-size: 14px;
+}
+.items-amount {
+	width: 46px;
+	height: 37px;
+	border: 1px solid #6a6a6a;
+	text-align: center;
+	color: #565656;
+}
+.items-change {
+	width: 46px;
+	height: 37px;
+	margin: 0 auto;
+}
+#increase-amount, #reduce-amount {
+	float: left;
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	background: url(../images/increase-ic.png) no-repeat;
+}
+#reduce-amount {
+	float: right;
+	background: url(../images/reduce-ic.png) no-repeat;
 }
 .sum {
 	width: 53%;

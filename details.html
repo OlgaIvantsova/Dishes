@@ -3,9 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="styles/confirmation-styles.css">
-	<script src="scripts/jquery-1.11.2.min.js"></script>
-	<script src="scripts/script.js"></script>
+	<link rel="stylesheet" href="styles/details-styles.css">
 	<title>Tausend Tassen</title>
 </head>
 <body>
@@ -90,10 +88,10 @@
 				<a href="#" class="active">shopping</a>
 			</div>
 			<div class="tabs clearfix">
-				<a href="#" class="tabs-item">Shopping</a>
+				<a href="#" class="tabs-item tabs-item-active">Shopping</a>
 				<a href="#" class="tabs-item">Livraison / Livraison</a>
 				<a href="#" class="tabs-item">Informations de facturation</a>
-				<a href="#" class="tabs-item tabs-item-active">Confirmation</a>
+				<a href="#" class="tabs-item">Confirmation</a>
 			</div>
 			<div class="descr">
 				<p><span>Information: </span>Les tarifs de location comprennent le nettoyage se un week-end ou trois jours calendaires.</p>
@@ -107,23 +105,32 @@
 							<td>Produit</td>
 							<td>Prix</td>
 							<td>Nombre</td>
-							<td>Nombre</td>
 							<td>Somme</td>
 						</tr>
 						<tr>
 							<td><a href="#"><img src="images/flatware-ic.jpg" alt="Product`s foto"></a></td>
 							<td>Un ensemble de cuillees en argent</td>
 							<td>25.42</td>
-							<td>10</td>
-							<td>10</td>
+							<td class="items">
+								<input class="items-amount" type="text" value="10">
+								<div class="items-change clearfix">
+									<a href="#" id="increase-amount"></a>
+									<a href="#" id="reduce-amount"></a>
+								</div>
+							</td>
 							<td>254.20</td>
 						</tr>
 						<tr>
 							<td><a href="#"><img src="images/flatware-ic2.jpg" alt="Product`s foto"></a></td>
 							<td>Un ensemble de cuillees en argent</td>
 							<td>25.42</td>
-							<td>10</td>
-							<td>10</td>
+							<td class="items">
+								<input class="items-amount" type="text" value="10">
+								<div class="items-change clearfix">
+									<a href="#" id="increase-amount"></a>
+									<a href="#" id="reduce-amount"></a>
+								</div>
+							</td>
 							<td>254.20</td>
 						</tr>
 					</tbody>
@@ -135,19 +142,11 @@
 						<p>Gesamtsumme (inkl. MwSt.): </p>
 						<p>Mehrwehrtsteue</p>
 					</div>
-					<div class="total-sum">
-						<p>Gesamtsumme (inkl. MwSt.):</p>
-						<p>Mehrwehrtsteuer (19%):</p>
-					</div>
 				</div>
 				<div class="amount">
 					<div class="pre-amount">
 						<p>508,40 €</p>
 						<p>21,87 €</p>
-					</div>
-					<div class="total-amount">
-						<p>529,87€</p>
-						<p>121,87 €</p>
 					</div>
 				</div>
 			</div>
