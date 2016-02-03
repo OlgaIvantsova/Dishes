@@ -365,14 +365,7 @@ button a:hover, button a:active {color: grey;}
 		padding-top: 20px;
 	}
 	.tabs-item:nth-of-type(3), .tabs-item:last-child {width: 25%;}
-	.application, .application:last-child {
-    	width: 100%;
-    	 float: none; 
-   		 margin: 0 auto;
-   	}
-   	.application:first-child > * {
-    	padding-left: 0; 
-	}
+	.calendar {width: 100%;}
 	footer {padding: 10px;}
 	.contact {font-size: 14px;}
 	button a {padding: 3px;}
@@ -420,6 +413,9 @@ button a:hover, button a:active {color: grey;}
 	.choice-item td:nth-of-type(odd) {padding-right: 0;}
 	.choice-item td:first-child {padding-right: 20px;}
 	.choice-item td:nth-of-type(2) {padding: 5px;}
+	.calendar-wrap {
+     	width: 100%; 
+	}
     .manage-order {width: 90%;}
 	.footer-left-block, .footer-right-block, .sidebar {
 		float: none;
