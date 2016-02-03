@@ -99,6 +99,24 @@ form input::-webkit-input-placeholder {
 	height: 32px;
 	background: url(../images/basket.png);
 }
+.nav {
+	display: none;
+	color: #fff;
+	background: grey;
+	line-height: 50px;
+	padding-left: 15px;
+}
+.nav a {
+	float: right;
+	padding: 15px;
+}
+.menu-icon {
+	display: block;
+	width: 31px;
+	height: 20px;
+	background: url(../images/menu-icon.png) no-repeat;
+}
+.nav a:hover {background: #ccc;}
 .header-menu {
 	width: 100%;
 	font: 18px Cambria Math;
@@ -398,25 +416,27 @@ button a:hover, button a:active {color: grey;}
 	}
 	form, .basket {width: 50%;}
 	.logo-wrap a {display: inline-block;}
+	.nav {display: block;}
 	.header-menu {
+		display: none;
 		padding: 0;
 		text-align: center;
 	}
 	.header-menu li {
 		float: none;
- 	    position: relative;
-   	    width: 100%;
-   	    padding: 10px 0;
-	}
+		padding: 0;
+ 	}
+	.header-menu a {padding: 20px;}
 	.header-submenu {
-   		position: absolute;
-    	top: 99%;
-    	right: 0;
-   		left: 0;
+   		position: inherit;
+   		display: block;
+    	width: 100%;
+   	}
+   	.header-submenu li {
+   		float: none;
    		width: 100%;
-   		z-index: 10;
-	}
-   	.header-submenu li {width: 100%;}
+   	}
+   	.header-submenu a {padding: 20px;}
 	.sidebar a {padding: 10px 0;}
 	.content {
 		float: none;
