@@ -193,7 +193,7 @@ main {
 	color: #464646;
 	font-size: 14px;
 	text-align: left;
-	width: 590px;
+	width: 50%;
 	margin: 0 auto;
 	margin-bottom: 40px;
 }
@@ -258,15 +258,16 @@ td.choice-amount {
 	padding-top: 12px;
 }
 .calendar input {
-	width: 170px;
+	width: 178px;
 	height: 45px;
-	padding: 0 10px;
+	padding: 10px 5px;
 	margin-top: 6px;
 	border: 1px solid #6a6a6a;
 	font-size: 18px;
 	color: #6a6a6a;
-	background: url(../images/date-ic.png) no-repeat 95% center;
+	background: url(../images/date-ic.png) no-repeat 97% center;
 }
+.calendar input:focus {background: #fff;}
 .manage-order {
 	width: 53%;
 	margin: 0 auto;
@@ -365,6 +366,7 @@ button a:hover, button a:active {color: grey;}
 		padding-top: 20px;
 	}
 	.tabs-item:nth-of-type(3), .tabs-item:last-child {width: 25%;}
+	.descr {width: 95%;}
 	.calendar {width: 100%;}
 	footer {padding: 10px;}
 	.contact {font-size: 14px;}
@@ -413,9 +415,14 @@ button a:hover, button a:active {color: grey;}
 	.choice-item td:nth-of-type(odd) {padding-right: 0;}
 	.choice-item td:first-child {padding-right: 20px;}
 	.choice-item td:nth-of-type(2) {padding: 5px;}
-	.calendar-wrap {
-     	width: 100%; 
-	}
+	.calendar-wrap {width: 100%;}
+	.calendar-block, .calendar-block:first-child {
+    	 float: none; 
+   		 width: 80%;
+   		 margin: 0 auto;
+   	}
+
+	.calendar input {width: 100%;}
     .manage-order {width: 90%;}
 	.footer-left-block, .footer-right-block, .sidebar {
 		float: none;
