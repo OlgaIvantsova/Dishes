@@ -260,20 +260,19 @@ h1 {
 .number input {
 	border: 1px solid #6a6a6a;
 	width: 100%;
-	height: 22px;
-	margin: 2px 0;
+	height: 45px;
 	text-align: center;
 }
-.number input::-webkit-input-placeholder {
+/*.number input::-webkit-input-placeholder {
 	text-align: left;
 	padding-left: 20px;
-}
+}*/
 .select {
 	position: absolute;
-    bottom: 2px;
+    bottom: 0;
     right: 0;
-	width: 15px;
-	height: 22px;
+	width: 25px;
+	height: 45px;
 }
 .arrow-top, .arrow-down {
 	background: url(../images/arrow-top.png) no-repeat 50% 50%;
