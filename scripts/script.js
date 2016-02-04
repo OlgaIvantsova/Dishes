@@ -64,12 +64,29 @@ $(document).ready(function () {
       };
     });
 
-   
-  $(function(){
-            $("#datepicker1").datepicker();
-            $("#datepicker2").datepicker();
-            $("#datepicker3").datepicker();
-            $("#datepicker4").datepicker();
-       });
+    $('.arrow-down').click(function(e){
+            e.preventDefault();
+            var oldInputValue = $(this).parent().parent().find('input').val();
+            oldInputValue = parseInt(oldInputValue);
+            if(!oldInputValue && oldInputValue <= 1){
+                return;
+            }
+            $(this).parent().parent().find('input').val(oldInputValue - 1);
+        });
+        $('.arrow-top').click(function(e){
+            e.preventDefault();
+            var oldInputValue = $(this).parent().parent().find('input').val();
+            oldInputValue = parseInt(oldInputValue);
+            if(!oldInputValue){
+              oldInputValue=0;
+            }
+            $(this).parent().parent().find('input').val(oldInputValue + 1);
+        });  
+  // $(function(){
+  //           $("#datepicker1").datepicker();
+  //           $("#datepicker2").datepicker();
+  //           $("#datepicker3").datepicker();
+  //           $("#datepicker4").datepicker();
+  //      });
 
 });
