@@ -29,6 +29,8 @@ function scrollLeftGallery(selector) {
 
 
 $(document).ready(function () {
+  $('#searchsubmit').attr("value","");
+
    $('#scroll-right').click(function(event) {
    		event.preventDefault();
    		scrollRightGallery('.gallery');
@@ -40,7 +42,7 @@ $(document).ready(function () {
    	});
 
    $("#menu-icon").click(function(event) {
-      var menu = $(".header-menu");
+      var menu = $(".menu");
       event.preventDefault();
        menu.slideToggle();
        $(window).resize(function() {

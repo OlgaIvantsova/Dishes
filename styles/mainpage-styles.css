@@ -70,15 +70,16 @@ header input.field {
 header input[type="text"]::-webkit-input-placeholder {
 	color: #999;
 }
-.search-icon {
+#searchsubmit {
 	position: absolute;
 	top: 50%;
-	margin-top: -14px;
+	margin-top: -7px;
 	right: 9px;
 	display: block;
 	width: 14px;
 	height: 14px;
-	background: url(../images/search.png);
+	background: url(../images/search.png) no-repeat;
+	cursor: pointer;
 }
 .basket {
 	float: right;
@@ -118,14 +119,14 @@ header input[type="text"]::-webkit-input-placeholder {
 	background: url(../images/menu-icon.png) no-repeat;
 }
 .nav a:hover {background: #ccc;}
-.header-menu {
+.menu {
 	width: 100%;
 	font: 18px Cambria Math;
 	text-transform: uppercase;
 	padding: 0 3.4%;
 }
-.header-menu li {float: left;}
-.header-menu a {
+.menu li {float: left;}
+.menu a {
 	display: inline-block;
 	padding: 20px;
 	color: #000;
@@ -137,7 +138,7 @@ header input[type="text"]::-webkit-input-placeholder {
 	margin-left: 15px;
 	background: url(../images/arrow.png) no-repeat;
 }
-.header-menu a:hover {
+.menu a:hover {
 	color: #11157c;
 }
 .header-submenu {
@@ -153,7 +154,7 @@ header input[type="text"]::-webkit-input-placeholder {
 	border: 1px solid #fff;
 }
 .header-submenu a {padding: 10px;}
-.header-menu li:hover > .header-submenu {display: block;}
+.menu li:hover > .header-submenu {display: block;}
 
 /*middle*/
 .banner {
@@ -513,10 +514,10 @@ button a, .abonement input[type="submit"] {
 button a:hover, button a:active, .abonement input[type="submit"]:hover {color: grey;}
 
 @media only screen and (max-width: 1080px) {
-	.header-menu a {padding: 5px;}
+	.menu a {padding: 5px;}
 }
 @media only screen and (max-width: 980px) {
-	.header-menu {
+	.menu {
 		font-size: 14px;
 		padding: 0 2%;
 	}
@@ -574,16 +575,16 @@ button a:hover, button a:active, .abonement input[type="submit"]:hover {color: g
 	form, .basket {width: 50%;}
 	.logo-wrap a {display: inline-block;}
 	.nav {display: block;}
-	.header-menu {
+	.menu {
 		display: none;
 		padding: 0;
 		text-align: center;
 	}
-	.header-menu li {
+	.menu li {
 		float: none;
 		padding: 0;
  	}
-	.header-menu a {padding: 20px;}
+	.menu a {padding: 20px;}
 	.header-submenu {
    		position: inherit;
    		display: block;
