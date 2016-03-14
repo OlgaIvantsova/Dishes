@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="styles/details-styles.css">
+	<link rel="stylesheet" href="styles/common-styles.css">
 	<script src="scripts/jquery-1.11.2.min.js"></script>
 	<script src="scripts/script.js"></script>
 	<title>Tausend Tassen</title>
@@ -28,7 +28,7 @@
 			<div class="nav clearfix"><span>Navigation</span><a href="#" id="menu-icon"><i class="menu-icon"></i></a></div>
 			<ul class="menu clearfix">
 				<li>
-					<a href="#" class="clearfix"><span>fourches</span><i class="arrow"></i></a>
+					<a href="#" class="clearfix"><div class="left menu-item-has-children">fourches</div></a>
 					<ul class="header-submenu">
 						<li><a href="#">fourches</a></li>
 						<li><a href="#">plaques</a></li>
@@ -37,7 +37,7 @@
 					</ul>
 				</li>
 				<li>
-					<a href="#" class="clearfix"><span>plaques</span><i class="arrow"></i></a>
+					<a href="#" class="clearfix"><div class="left menu-item-has-children">plaques</div></a>
 					<ul class="header-submenu">
 						<li><a href="#">fourches</a></li>
 						<li><a href="#">plaques</a></li>
@@ -46,7 +46,7 @@
 					</ul>
 				</li>
 				<li>
-					<a href="#" class="clearfix"><div class="left">poêles,<br>chaudrons</div><i class="arrow"></i></a>
+					<a href="#" class="clearfix"><div class="left menu-item-has-children">poêles,<br>chaudrons</div></a>
 					<ul class="header-submenu">
 						<li><a href="#">fourches</a></li>
 						<li><a href="#">plaques</a></li>
@@ -55,7 +55,7 @@
 					</ul>
 				</li>
 				<li>
-					<a href="#" class="clearfix"><div class="left">cristal,<br>verre</div><i class="arrow"></i></a>
+					<a href="#" class="clearfix"><div class="left menu-item-has-children">cristal,<br>verre</div></a>
 					<ul class="header-submenu">
 						<li><a href="#">fourches</a></li>
 						<li><a href="#">plaques</a></li>
@@ -64,7 +64,7 @@
 					</ul>
 				</li>
 				<li>
-					<a href="#" class="clearfix"><div class="left">serviettes,<br>nappes, serviettes</div><i class="arrow"></i></a>
+					<a href="#" class="clearfix"><div class="left menu-item-has-children">serviettes,<br>nappes, serviettes</div></a>
 					<ul class="header-submenu">
 						<li><a href="#">fourches</a></li>
 						<li><a href="#">plaques</a></li>
@@ -73,7 +73,7 @@
 					</ul>
 				</li>
 				<li>
-					<a href="#" class="clearfix"><span>Tenez-vin</span><i class="arrow"></i></a>
+					<a href="#" class="clearfix"><div class="left menu-item-has-children">Tenez-vin</div></a>
 					<ul class="header-submenu">
 						<li><a href="#">fourches</a></li>
 						<li><a href="#">plaques</a></li>
@@ -95,14 +95,14 @@
 				<a href="#" class="tabs-item">Informations de facturation</a>
 				<a href="#" class="tabs-item">Confirmation</a>
 			</div>
-			<div class="descr">
+			<div class="details-descr">
 				<p><span>Information: </span>Les tarifs de location comprennent le nettoyage se un week-end ou trois jours calendaires.</p>
 				<p>Vous pouvez specifier votre bail </p>
 			</div>
-			<div class="products">
+			<div class="details-products">
 				<table>
 					<tbody>
-						<tr class="products-first-row">
+						<tr class="details-products-first-row">
 							<td>&nbsp;</td>
 							<td>Produit</td>
 							<td>Prix</td>
@@ -113,9 +113,9 @@
 							<td><a href="#"><img src="images/flatware-ic.jpg" alt="Product`s foto"></a></td>
 							<td>Un ensemble de cuillees en argent</td>
 							<td>25.42</td>
-							<td class="items">
-								<input class="items-amount" type="text" value="10">
-								<div class="items-change clearfix">
+							<td class="details-items">
+								<input class="details-items-amount" type="text" value="10">
+								<div class="details-items-change clearfix">
 									<a href="#" id="increase-amount"></a>
 									<a href="#" id="reduce-amount"></a>
 								</div>
@@ -126,9 +126,9 @@
 							<td><a href="#"><img src="images/flatware-ic2.jpg" alt="Product`s foto"></a></td>
 							<td>Un ensemble de cuillees en argent</td>
 							<td>25.42</td>
-							<td class="items">
-								<input class="items-amount" type="text" value="10">
-								<div class="items-change clearfix">
+							<td class="details-items">
+								<input class="details-items-amount" type="text" value="10">
+								<div class="details-items-change clearfix">
 									<a href="#" id="increase-amount"></a>
 									<a href="#" id="reduce-amount"></a>
 								</div>
@@ -138,23 +138,23 @@
 					</tbody>
 				</table>
 			</div>
-			<div class="sum clearfix">
-				<div class="sum-title">
-					<div class="pre-sum">
+			<div class="details-sum clearfix">
+				<div class="details-sum-title">
+					<div class="details-pre-sum">
 						<p>Gesamtsumme (inkl. MwSt.): </p>
 						<p>Mehrwehrtsteue</p>
 					</div>
 				</div>
-				<div class="amount">
-					<div class="pre-amount">
+				<div class="details-amount">
+					<div class="details-pre-amount">
 						<p>508,40 €</p>
 						<p>21,87 €</p>
 					</div>
 				</div>
 			</div>
-			<div class="manage-order clearfix">
-				<input type="submit" class="back" value="Retou">
-				<input type="submit" class="continue" value="Continuer">
+			<div class="details-manage-order clearfix">
+				<input type="submit" class="details-back" value="Retou">
+				<input type="submit" class="details-continue" value="Continuer">
 			</div>	
 		</div>
 		<footer class="clearfix">

@@ -1,3 +1,5 @@
+
+
 function scrollRightGallery(selector) {
   selector = $(selector);
     if($(document).all) {
@@ -29,7 +31,7 @@ function scrollLeftGallery(selector) {
 
 
 $(document).ready(function () {
-  $('#searchsubmit').attr("value","");
+   $('#searchsubmit').attr("value","");
 
    $('#scroll-right').click(function(event) {
    		event.preventDefault();
@@ -40,6 +42,10 @@ $(document).ready(function () {
    		event.preventDefault();
    		scrollLeftGallery('.gallery');
    	});
+
+  setInterval(function() {
+    scrollRightGallery('.gallery');
+  }, 2000);
 
    $("#menu-icon").click(function(event) {
       var menu = $(".menu");
@@ -53,19 +59,37 @@ $(document).ready(function () {
     });
   });
 
-   $('.choice-item').click(function(event){ 
+   $('.livraison-choice-item').click(function(event){ 
       event.preventDefault();
       var radioBtn = $(this).find(":radio");
       var attr = radioBtn.attr("checked");
       if(attr == "checked") {
         radioBtn.removeAttr("checked");
-        $(this).find(".radiobtn-active").addClass("radiobtn-ic").removeClass("radiobtn-active");
+        $(this).find(".livraison-radiobtn-active").addClass("livraison-radiobtn-ic").removeClass("livraison-radiobtn-active");
       } else {
         radioBtn.attr("checked","checked");
-        $(this).find(".radiobtn-ic").addClass("radiobtn-active").removeClass("radiobtn-ic");
+        $(this).find(".livraison-radiobtn-ic").addClass("livraison-radiobtn-active").removeClass("livraison-radiobtn-ic");
       };
     });
 
+    $('.category-arrow-down').click(function(e){
+            e.preventDefault();
+            var oldInputValue = $(this).parent().parent().find('input').val();
+            oldInputValue = parseInt(oldInputValue);
+            if(!oldInputValue && oldInputValue <= 1){
+                return;
+            }
+            $(this).parent().parent().find('input').val(oldInputValue - 1);
+        });
+    $('.category-arrow-top').click(function(e){
+            e.preventDefault();
+            var oldInputValue = $(this).parent().parent().find('input').val();
+            oldInputValue = parseInt(oldInputValue);
+            if(!oldInputValue){
+              oldInputValue=0;
+            }
+            $(this).parent().parent().find('input').val(oldInputValue + 1);
+        });  
     $('.arrow-down').click(function(e){
             e.preventDefault();
             var oldInputValue = $(this).parent().parent().find('input').val();
@@ -75,7 +99,7 @@ $(document).ready(function () {
             }
             $(this).parent().parent().find('input').val(oldInputValue - 1);
         });
-        $('.arrow-top').click(function(e){
+    $('.arrow-top').click(function(e){
             e.preventDefault();
             var oldInputValue = $(this).parent().parent().find('input').val();
             oldInputValue = parseInt(oldInputValue);
@@ -90,5 +114,47 @@ $(document).ready(function () {
   //           $("#datepicker3").datepicker();
   //           $("#datepicker4").datepicker();
   //      });
+ defineHeight($('.products-item'), $('.top-block'), $('.order'));
+ defineHeight($('.category-products-item'), $('.category-top-block'), $('.category-order'));
+
+  $(window).resize(function() {
+    $('.products-item').css('height', function() {
+      defineHeight($('.products-item'), $('.top-block'), $('.order'));
+    });
+     $('.category-products-item').css('height', function() {
+      defineHeight($('.category-products-item'), $('.category-top-block'), $('.category-order'));
+    });
+    
+  });
+    
+
+  
+  // function defineHeight() {
+  //   $('.products-item').css('height', function() {
+  //     var arr = [];
+  //     var blocks = $('.top-block');
+  //     for (var i = 0; i < blocks.length; i++) {
+  //       arr.push(blocks[i].clientHeight);
+  //     };
+  //     var maxHeight = Math.max.apply(Math, arr);
+  //     var btnHeight = $('.order').height();
+  //     var totalHeight = maxHeight+btnHeight;
+  //     return totalHeight;
+  //     });
+  // }
+
+function defineHeight(mainBlock, topBlock, order) {
+    mainBlock.css('height', function() {
+      var arr = [];
+      var blocks = topBlock;
+      for (var i = 0; i < blocks.length; i++) {
+        arr.push(blocks[i].clientHeight);
+      };
+      var maxHeight = Math.max.apply(Math, arr);
+      var btnHeight = order.height();
+      var totalHeight = maxHeight+btnHeight;
+      return totalHeight;
+      });
+  }
 
 });

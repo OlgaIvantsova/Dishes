@@ -3,12 +3,8 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="styles/livraison-styles.css">
-	<!-- <link type="text/css" href="styles/ui-lightness/jquery-ui-1.9.2.custom.css" rel="stylesheet" />
-	<link type="text/css" href="styles/ui-lightness/jquery-ui-1.9.2.custom.min.css" rel="stylesheet" /> -->
+	<link rel="stylesheet" href="styles/common-styles.css">
 	<script src="scripts/jquery-1.8.3.js" type="text/javascript"></script>
-<!-- 	// <script src="scripts/jquery-ui-1.9.2.custom.js" type="text/javascript"></script>
-	// <script src="scripts/jquery-ui-1.9.2.custom.min.js"></script> -->
 	<script src="scripts/script.js"></script>
 	<title>Tausend Tassen</title>
 </head>
@@ -32,7 +28,7 @@
 			<div class="nav clearfix"><span>Navigation</span><a href="#" id="menu-icon"><i class="menu-icon"></i></a></div>
 			<ul class="menu clearfix">
 				<li>
-					<a href="#" class="clearfix"><span>fourches</span><i class="arrow"></i></a>
+					<a href="#" class="clearfix"><div class="left menu-item-has-children">fourches</div></a>
 					<ul class="header-submenu">
 						<li><a href="#">fourches</a></li>
 						<li><a href="#">plaques</a></li>
@@ -41,7 +37,7 @@
 					</ul>
 				</li>
 				<li>
-					<a href="#" class="clearfix"><span>plaques</span><i class="arrow"></i></a>
+					<a href="#" class="clearfix"><div class="left menu-item-has-children">plaques</div></a>
 					<ul class="header-submenu">
 						<li><a href="#">fourches</a></li>
 						<li><a href="#">plaques</a></li>
@@ -50,7 +46,7 @@
 					</ul>
 				</li>
 				<li>
-					<a href="#" class="clearfix"><div class="left">poêles,<br>chaudrons</div><i class="arrow"></i></a>
+					<a href="#" class="clearfix"><div class="left menu-item-has-children">poêles,<br>chaudrons</div></a>
 					<ul class="header-submenu">
 						<li><a href="#">fourches</a></li>
 						<li><a href="#">plaques</a></li>
@@ -59,7 +55,7 @@
 					</ul>
 				</li>
 				<li>
-					<a href="#" class="clearfix"><div class="left">cristal,<br>verre</div><i class="arrow"></i></a>
+					<a href="#" class="clearfix"><div class="left menu-item-has-children">cristal,<br>verre</div></a>
 					<ul class="header-submenu">
 						<li><a href="#">fourches</a></li>
 						<li><a href="#">plaques</a></li>
@@ -68,7 +64,7 @@
 					</ul>
 				</li>
 				<li>
-					<a href="#" class="clearfix"><div class="left">serviettes,<br>nappes, serviettes</div><i class="arrow"></i></a>
+					<a href="#" class="clearfix"><div class="left menu-item-has-children">serviettes,<br>nappes, serviettes</div></a>
 					<ul class="header-submenu">
 						<li><a href="#">fourches</a></li>
 						<li><a href="#">plaques</a></li>
@@ -77,7 +73,7 @@
 					</ul>
 				</li>
 				<li>
-					<a href="#" class="clearfix"><span>Tenez-vin</span><i class="arrow"></i></a>
+					<a href="#" class="clearfix"><div class="left menu-item-has-children">Tenez-vin</div></a>
 					<ul class="header-submenu">
 						<li><a href="#">fourches</a></li>
 						<li><a href="#">plaques</a></li>
@@ -99,72 +95,72 @@
 				<a href="#" class="tabs-item">Informations de facturation</a>
 				<a href="#" class="tabs-item">Confirmation</a>
 			</div>
-			<div class="descr">
+			<div class="livraison-descr">
 				<p><span>Information: </span>Lorsque j'avais six ans j'ai vu, une fois, une magnifique image, dans un livre sur la
 				Forêt Vierge qui s'appelait "Histoires Vécues". Ça représentait un serpent boa qui
 				avalait un fauve. Voilà la copie du dessin.</p>
 			</div>
-			<form action="" class="main-form clearfix">
+			<form action="" class="livraison-main-form clearfix">
 				<h3>Sélectionnez une méthode de livraison:</h3>
-				<table class="choice">
+				<table class="livraison-choice">
 					<tbody>
-						<tr class="choice-item">
-							<td class="radiobtn-ic radiobtn-active">
+						<tr class="livraison-choice-item">
+							<td class="livraison-radiobtn-ic radiobtn-active">
 								<label for="delivery1"><input type="radio" value="50,00 €" checked name="delivery1"></label>
 							</td>
 							<td>
 								<img src="images/gates.png" alt="Delivery">
 							</td>
 							<td>
-								<p class="choice-descr">Frais de port à Paris</p>
+								<p class="livraison-choice-descr">Frais de port à Paris</p>
 								<span>la livraison de certaines rues dans les 10 à 16 heures</span>
 							</td>
-							<td class="choice-amount">50,00 €</td>
+							<td class="livraison-choice-amount">50,00 €</td>
 						</tr>
-						<tr class="choice-item">
-							<td class="radiobtn-ic">
+						<tr class="livraison-choice-item">
+							<td class="livraison-radiobtn-ic">
 								<label for="delivery2"><input type="radio" value="75,00 €" name="delivery2"></label>
 							</td>
 							<td>
 								<img src="images/gates.png" alt="Delivery">
 							</td>
 							<td>
-								<p class="choice-descr">Frais de port à Paris</p>
+								<p class="livraison-choice-descr">Frais de port à Paris</p>
 								<span>la livraison de certaines rues dans les 10 à 16 heures</span>
 							</td>
-							<td class="choice-amount">75,00 €</td>
+							<td class="livraison-choice-amount">75,00 €</td>
 						</tr>
-						<tr class="choice-item">
-							<td class="radiobtn-ic radiobtn-active">
+						<tr class="livraison-choice-item">
+							<td class="livraison-radiobtn-ic livraison-radiobtn-active">
 								<label for="delivery3"><input type="radio" value="par accord" checked name="delivery3"></label>
 							</td>
 							<td>
 								<img src="images/truck2.png" alt="Delivery">
 							</td>
 							<td>
-								<p class="choice-descr">Frais de port à Paris</p>
+								<p class="livraison-choice-descr">Frais de port à Paris</p>
 								<span>la livraison de certaines rues dans les 10 à 16 heures</span>
 							</td>
-							<td class="choice-amount">par accord</td>
+							<td class="livraison-choice-amount">par accord</td>
 						</tr>
 					</tbody>
 				</table>
-				<div class="calendar">
-					<div class="calendar-wrap clearfix">
-						<div class="calendar-block">
+				<div class="livraison-calendar">
+					<div class="livraison-calendar-wrap clearfix">
+						<div class="livraison-calendar-block">
 							<label for="datepicker1">Lors de la livraison<input type="date" name="datepicker1" placeholder="... ... ..."></label>
-							<label for="datepicker2">Lors de la livraison<input type="date" name="datepicker2" value="... ... ..."></label>
+							<label for="datepicker2">Lors de la livraison<input type="date" name="datepicker2" ></label>
 						</div>
-						<div class="calendar-block">
-							<label for="datepicker3">Lors de la livraison<input type="date" name="datepicker3" value="... ... ..."></label>
-							<label for="datepicker4">Lors de la livraison<input type="date" name="datepicker4" value="... ... ..."></label>
+						<div class="livraison-calendar-block">
+							<label for="datepicker3">Lors de la livraison<input type="date" name="datepicker3"></label>
+							<label for="datepicker4">Lors de la livraison<input type="date" name="datepicker4"></label>
 						</div>
 					</div>
 				</div>
 				</div>
-				<div class="manage-order clearfix">
-					<input type="submit" class="back" value="Retou">
-					<input type="submit" class="continue" value="Continuer">
+				<div class="livraison-manage-order clearfix">
+					<input type="submit" class="livraison-back" value="Retou">
+					<input type="submit" class="livraison-continue" value="Continuer">
 				</div>	
 			</form>
 		</div>

@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="styles/confirmation-styles.css">
+	<link rel="stylesheet" href="styles/common-styles.css">
 	<script src="scripts/jquery-1.11.2.min.js"></script>
 	<script src="scripts/script.js"></script>
 	<title>Tausend Tassen</title>
@@ -28,7 +28,7 @@
 			<div class="nav clearfix"><span>Navigation</span><a href="#" id="menu-icon"><i class="menu-icon"></i></a></div>
 			<ul class="menu clearfix">
 				<li>
-					<a href="#" class="clearfix"><span>fourches</span><i class="arrow"></i></a>
+					<a href="#" class="clearfix"><div class="left menu-item-has-children">fourches</div></a>
 					<ul class="header-submenu">
 						<li><a href="#">fourches</a></li>
 						<li><a href="#">plaques</a></li>
@@ -37,7 +37,7 @@
 					</ul>
 				</li>
 				<li>
-					<a href="#" class="clearfix"><span>plaques</span><i class="arrow"></i></a>
+					<a href="#" class="clearfix"><div class="left menu-item-has-children">plaques</div></a>
 					<ul class="header-submenu">
 						<li><a href="#">fourches</a></li>
 						<li><a href="#">plaques</a></li>
@@ -46,7 +46,7 @@
 					</ul>
 				</li>
 				<li>
-					<a href="#" class="clearfix"><div class="left">poêles,<br>chaudrons</div><i class="arrow"></i></a>
+					<a href="#" class="clearfix"><div class="left menu-item-has-children">poêles,<br>chaudrons</div></a>
 					<ul class="header-submenu">
 						<li><a href="#">fourches</a></li>
 						<li><a href="#">plaques</a></li>
@@ -55,7 +55,7 @@
 					</ul>
 				</li>
 				<li>
-					<a href="#" class="clearfix"><div class="left">cristal,<br>verre</div><i class="arrow"></i></a>
+					<a href="#" class="clearfix"><div class="left menu-item-has-children">cristal,<br>verre</div></a>
 					<ul class="header-submenu">
 						<li><a href="#">fourches</a></li>
 						<li><a href="#">plaques</a></li>
@@ -64,7 +64,7 @@
 					</ul>
 				</li>
 				<li>
-					<a href="#" class="clearfix"><div class="left">serviettes,<br>nappes, serviettes</div><i class="arrow"></i></a>
+					<a href="#" class="clearfix"><div class="left menu-item-has-children">serviettes,<br>nappes, serviettes</div></a>
 					<ul class="header-submenu">
 						<li><a href="#">fourches</a></li>
 						<li><a href="#">plaques</a></li>
@@ -73,7 +73,7 @@
 					</ul>
 				</li>
 				<li>
-					<a href="#" class="clearfix"><span>Tenez-vin</span><i class="arrow"></i></a>
+					<a href="#" class="clearfix"><div class="left menu-item-has-children">Tenez-vin</div></a>
 					<ul class="header-submenu">
 						<li><a href="#">fourches</a></li>
 						<li><a href="#">plaques</a></li>
@@ -95,14 +95,14 @@
 				<a href="#" class="tabs-item">Informations de facturation</a>
 				<a href="#" class="tabs-item tabs-item-active">Confirmation</a>
 			</div>
-			<div class="descr">
+			<div class="confirmation-descr">
 				<p><span>Information: </span>Les tarifs de location comprennent le nettoyage se un week-end ou trois jours calendaires.</p>
 				<p>Vous pouvez specifier votre bail </p>
 			</div>
-			<div class="products">
+			<div class="confirmation-products">
 				<table>
 					<tbody>
-						<tr class="products-first-row">
+						<tr class="confirmation-products-first-row">
 							<td>&nbsp;</td>
 							<td>Produit</td>
 							<td>Prix</td>
@@ -129,31 +129,31 @@
 					</tbody>
 				</table>
 			</div>
-			<div class="sum clearfix">
-				<div class="sum-title">
-					<div class="pre-sum">
+			<div class="confirmation-sum clearfix">
+				<div class="confirmation-sum-title">
+					<div class="confirmation-pre-sum">
 						<p>Gesamtsumme (inkl. MwSt.): </p>
 						<p>Mehrwehrtsteue</p>
 					</div>
-					<div class="total-sum">
+					<div class="confirmation-total-sum">
 						<p>Gesamtsumme (inkl. MwSt.):</p>
 						<p>Mehrwehrtsteuer (19%):</p>
 					</div>
 				</div>
-				<div class="amount">
-					<div class="pre-amount">
+				<div class="confirmation-amount">
+					<div class="confirmation-pre-amount">
 						<p>508,40 €</p>
 						<p>21,87 €</p>
 					</div>
-					<div class="total-amount">
+					<div class="confirmation-total-amount">
 						<p>529,87€</p>
 						<p>121,87 €</p>
 					</div>
 				</div>
 			</div>
-			<div class="manage-order clearfix">
-				<input type="submit" class="back" value="Retou">
-				<input type="submit" class="continue" value="Continuer">
+			<div class="confirmation-manage-order clearfix">
+				<input type="submit" class="confirmation-back" value="Retou">
+				<input type="submit" class="confirmation-continue" value="Continuer">
 			</div>	
 		</div>
 		<footer class="clearfix">

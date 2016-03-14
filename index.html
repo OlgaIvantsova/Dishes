@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="styles/mainpage-styles.css">
+	<link rel="stylesheet" href="styles/common-styles.css">
 	<script src="scripts/jquery-1.11.2.min.js"></script>
 	<script src="scripts/script.js"></script>
 	<title>Tausend Tassen</title>
@@ -28,7 +28,7 @@
 			<div class="nav clearfix"><span>Navigation</span><a href="#" id="menu-icon"><i class="menu-icon"></i></a></div>
 			<ul class="menu clearfix">
 				<li>
-					<a href="#" class="clearfix"><span>GESCHIRR</span><i class="arrow"></i></a>
+					<a href="#" class="clearfix"><div class="left menu-item-has-children">GESCHIRR</div></a>
 					<ul class="header-submenu">
 						<li><a href="#">fourches</a></li>
 						<li><a href="#">plaques</a></li>
@@ -37,7 +37,7 @@
 					</ul>
 				</li>
 				<li>
-					<a href="#" class="clearfix"><span>GLÄSER</span><i class="arrow"></i></a>
+					<a href="#" class="clearfix"><div class="left menu-item-has-children">GLÄSER</div></a>
 					<ul class="header-submenu">
 						<li><a href="#">fourches</a></li>
 						<li><a href="#">plaques</a></li>
@@ -46,7 +46,7 @@
 					</ul>
 				</li>
 				<li>
-					<a href="#" class="clearfix"><div class="left">BESTECK</div><i class="arrow"></i></a>
+					<a href="#" class="clearfix"><div class="left menu-item-has-children">BESTECK</div></a>
 					<ul class="header-submenu">
 						<li><a href="#">fourches</a></li>
 						<li><a href="#">plaques</a></li>
@@ -55,7 +55,7 @@
 					</ul>
 				</li>
 				<li>
-					<a href="#" class="clearfix"><div class="left">VORLEGE &<br> ANRICHTBESTECKE</div><i class="arrow"></i></a>
+					<a href="#" class="clearfix"><div class="left menu-item-has-children">VORLEGE &<br> ANRICHTBESTECKE</div></a>
 					<ul class="header-submenu">
 						<li><a href="#">fourches</a></li>
 						<li><a href="#">plaques</a></li>
@@ -64,7 +64,7 @@
 					</ul>
 				</li>
 				<li>
-					<a href="#" class="clearfix"><div class="left">PARTYAUSSTATTUNG &<br> CHAFING DISH</div><i class="arrow"></i></a>
+					<a href="#" class="clearfix"><div class="left menu-item-has-children">PARTYAUSSTATTUNG &<br> CHAFING DISH</div></a>
 					<ul class="header-submenu">
 						<li><a href="#">fourches</a></li>
 						<li><a href="#">plaques</a></li>
@@ -73,7 +73,7 @@
 					</ul>
 				</li>
 				<li>
-					<a href="#" class="clearfix"><span>SONSTIGES</span><i class="arrow"></i></a>
+					<a href="#" class="clearfix"><div class="left menu-item-has-children">SONSTIGES</div></a>
 					<ul class="header-submenu">
 						<li><a href="#">fourches</a></li>
 						<li><a href="#">plaques</a></li>
@@ -153,17 +153,77 @@
 			</div>
 			<div class="products clearfix">
 				<div class="products-item">
+					<div class="top-block">
 					<div class="products-foto">
 						<img src="images/flatware.png" alt="Flatware">
 					</div>
 					<div class="products-descr">
 						<a href="#">
-							<h1>coutellerie</h1>
+							<h2>coutellerie</h2>
 							<p>Nous avons acheté une bonne coutellerie..</p>
 							<i class="products-info"></i>
 						</a>
 					</div>
 					<div class="price"><span>Preis: </span><span class="euro">18.99 € </span><span>(inkl. MwSt.)</span></div>
+					</div>
+					<div class="order clearfix">
+						<div class="number">
+							<!-- <span>nombre</span> -->
+							<input type="text" placeholder="">
+							<div class="select">
+								<div class="arrow-top"></div>
+								<div class="arrow-down"></div>
+							</div>
+						</div>
+						<div class="buy clearfix">
+							<a href="#" class="view-basket"></a>
+							<a href="#" class="buy-btn">acheter</a>
+						</div>
+					</div>
+				</div>
+			<div class="products-item">
+					<div class="top-block">
+					<div class="products-foto">
+						<img src="images/flatware.png" alt="Flatware">
+					</div>
+					<div class="products-descr">
+						<a href="#">
+							<h2>coutellerie</h2>
+							<p>Nous avons acheté une bonne coutellerie...</p>
+							<i class="products-info"></i>
+						</a>
+					</div>
+					<div class="price"><span>Preis: </span><span class="euro">18.99 € </span><span>(inkl. MwSt.)</span></div>
+					</div>
+					<div class="order clearfix">
+						<div class="number">
+							<!-- <span>nombre</span> -->
+							<input type="text" placeholder="">
+							<div class="select">
+								<div class="arrow-top"></div>
+								<div class="arrow-down"></div>
+							</div>
+						</div>
+						<div class="buy clearfix">
+							<a href="#" class="view-basket"></a>
+							<a href="#" class="buy-btn">acheter</a>
+						</div>
+					</div>
+				</div>
+			<div class="products-item">
+					<div class="top-block">
+					<div class="products-foto">
+						<img src="images/flatware.png" alt="Flatware">
+					</div>
+					<div class="products-descr">
+						<a href="#">
+							<h2>coutellerie</h2>
+							<p>Nous avons acheté une bonne coutellerie..</p>
+							<i class="products-info"></i>
+						</a>
+					</div>
+					<div class="price"><span>Preis: </span><span class="euro">18.99 € </span><span>(inkl. MwSt.)</span></div>
+					</div>
 					<div class="order clearfix">
 						<div class="number">
 							<!-- <span>nombre</span> -->
@@ -180,71 +240,19 @@
 					</div>
 				</div>
 				<div class="products-item">
+					<div class="top-block">
 					<div class="products-foto">
 						<img src="images/flatware.png" alt="Flatware">
 					</div>
 					<div class="products-descr">
 						<a href="#">
-							<h1>coutellerie</h1>
+							<h2>coutellerie</h2>
 							<p>Nous avons acheté une bonne coutellerie..</p>
 							<i class="products-info"></i>
 						</a>
 					</div>
 					<div class="price"><span>Preis: </span><span class="euro">18.99 € </span><span>(inkl. MwSt.)</span></div>
-					<div class="order clearfix">
-						<div class="number">
-							<!-- <span>nombre</span> -->
-							<input type="text" placeholder="">
-							<div class="select">
-								<div class="arrow-top"></div>
-								<div class="arrow-down"></div>
-							</div>
-						</div>
-						<div class="buy clearfix">
-							<a href="#" class="view-basket"></a>
-							<a href="#" class="buy-btn">acheter</a>
-						</div>
 					</div>
-				</div>
-				<div class="products-item">
-					<div class="products-foto">
-						<img src="images/flatware.png" alt="Flatware">
-					</div>
-					<div class="products-descr">
-						<a href="#">
-							<h1>coutellerie</h1>
-							<p>Nous avons acheté une bonne coutellerie..</p>
-							<i class="products-info"></i>
-						</a>
-					</div>
-					<div class="price"><span>Preis: </span><span class="euro">18.99 € </span><span>(inkl. MwSt.)</span></div>
-					<div class="order clearfix">
-						<div class="number">
-							<!-- <span>nombre</span> -->
-							<input type="text" placeholder="">
-							<div class="select">
-								<div class="arrow-top"></div>
-								<div class="arrow-down"></div>
-							</div>
-						</div>
-						<div class="buy clearfix">
-							<a href="#" class="view-basket"></a>
-							<a href="#" class="buy-btn">acheter</a>
-						</div>
-					</div>
-				</div>
-				<div class="products-item">
-					<div class="products-foto">
-						<img src="images/flatware.png" alt="Flatware">
-					</div>
-					<div class="products-descr">
-						<a href="#">
-							<h1>coutellerie</h1>
-							<p>Nous avons acheté une bonne coutellerie..</p>
-							<i class="products-info"></i>
-						</a>
-					</div>
-					<div class="price"><span>Preis: </span><span class="euro">18.99 € </span><span>(inkl. MwSt.)</span></div>
 					<div class="order clearfix">
 						<div class="number">
 							<!-- <span>nombre</span> -->
