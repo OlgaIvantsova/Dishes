@@ -479,7 +479,7 @@ hr {
 	text-transform: uppercase;
 }
 .breadcrumps a {color: #757575;}
-.breadcrumps a:hover, a:active, a.active {color: #11157c;} 
+.breadcrumps a:hover, a:active, .breadcrumps a.active {color: #11157c;} 
 main {
 	width: 100%;
 	color: #4b4b4b;
@@ -907,7 +907,7 @@ div.checkbox-title input[type="checkbox"] {margin-left: 15px;}
 	padding-left: 44px;
 	color: #4b4b4b;
 }
-.category-sidebar a:hover, a.active {
+.category-sidebar a:hover, .category-sidebar a.active {
 	padding: 17px 0 17px 44px;
 	text-transform: uppercase;
 	background: #11157c;
